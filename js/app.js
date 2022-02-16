@@ -32,7 +32,7 @@ document
       isNaN(clothesExpenses)
     ) {
       document.getElementById("error-field-one").innerText =
-        "Please, Enter a valid number!";
+        "Please, Enter valid numbers!";
     }
     // Error handling when the values are negative
     else if (
@@ -42,7 +42,7 @@ document
       clothesExpenses < 0
     ) {
       document.getElementById("error-field-one").innerText =
-        "Please, Enter a positive value!";
+        "Please, Enter positive values!";
     }
     // Error handling when expenses is greater than income
     else if (totalExpenses > income) {
@@ -52,11 +52,12 @@ document
     // Generate the result when no errors found
     else {
       // Set Total Expenses as the innerText of Total Expenses Field
-      document.getElementById("total-expenses").innerText = totalExpenses;
+      document.getElementById("total-expenses").innerText =
+        totalExpenses.toFixed(2);
       // Calculate the balance
       const balance = income - totalExpenses;
       // Set the balance as the innerText of Balance Field
-      document.getElementById("balance").innerText = balance;
+      document.getElementById("balance").innerText = balance.toFixed(2);
     }
   });
 
@@ -84,15 +85,17 @@ document.getElementById("save-button").addEventListener("click", function () {
     document.getElementById("error-field-two").innerText =
       "You don't have sufficient balance for saving " + savingRate + "%";
     // So remaining balance will be equals to balance
-    document.getElementById("remaining-balance").innerText = balance;
+    document.getElementById("remaining-balance").innerText = balance.toFixed(2);
   }
   // Genarate the result when no errors found
   else {
     // Set the Saving Amount as the innerText of Saving Ammount Field
-    document.getElementById("saving-amount").innerText = savingAmount;
+    document.getElementById("saving-amount").innerText =
+      savingAmount.toFixed(2);
     // Calculate Remaining Balance
     const remainingBalance = balance - savingAmount;
     // Set the remaining balance as the innerText of remaining balance field
-    document.getElementById("remaining-balance").innerText = remainingBalance;
+    document.getElementById("remaining-balance").innerText =
+      remainingBalance.toFixed(2);
   }
 });
