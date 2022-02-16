@@ -1,3 +1,4 @@
+// Function Declaration
 // Function: Return input value as a floating point number
 function getInputValue(id) {
   const inputField = document.getElementById(id);
@@ -87,7 +88,7 @@ document.getElementById("save-button").addEventListener("click", function () {
   else if (savingAmount > balance) {
     document.getElementById("error-field-two").innerText =
       "You don't have sufficient balance for saving " + savingRate + "%";
-    // So remaining balance will be equals to balance
+    // So remaining balance will be equals to previous balance
     document.getElementById("remaining-balance").innerText = balance.toFixed(2);
   }
   // Genarate the result when no errors found
