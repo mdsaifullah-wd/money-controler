@@ -57,42 +57,45 @@
             <!-- Income field -->
             <div class="w-3/4 mx-auto mb-6">
                 <label for="" class="inline-block text-right w-1/5">Income:</label>
-                <input type="text" class="ml-4 bg-grey py-1 px-4">
+                <input type="text" class="ml-4 bg-grey py-1 px-4" id="income-input">
             </div>
             <!-- Expenses -->
             <p class="text-center text-xl my-6 font-semibold">Expenses</p>
             <!-- Food -->
             <div class="w-3/4 mx-auto mb-4">
                 <label for="" class="inline-block text-right w-1/5">Food:</label>
-                <input type="text" class="ml-4 bg-grey py-1 px-4">
+                <input type="text" class="ml-4 bg-grey py-1 px-4" id="food-input">
             </div>
             <!-- Rent -->
             <div class="w-3/4 mx-auto mb-4">
                 <label for="" class="inline-block text-right w-1/5">Rent:</label>
-                <input type="text" class="ml-4 bg-grey py-1 px-4">
+                <input type="text" class="ml-4 bg-grey py-1 px-4" id="rent-input">
             </div>
             <!-- Clothes -->
             <div class="w-3/4 mx-auto mb-6">
                 <label for="" class="inline-block text-right w-1/5">Clothes:</label>
-                <input type="text" class="ml-4 bg-grey py-1 px-4">
+                <input type="text" class="ml-4 bg-grey py-1 px-4" id="clothes-input">
             </div>
             <!-- Calculate button -->
             <button class="bg-sky-600 py-2 px-8 rounded text-white mx-auto 
-            block mb-6">Calculate</button>
+            block mb-6" id="calculate-button">Calculate</button>
             <!-- Total Expenses -->
-            <p class="text-center text-xl mb-1 font-semibold">Total Expenses: <span>00</span></p>
+            <p class="text-center text-xl mb-1 font-semibold">Total Expenses: <span id="total-expenses">00</span></p>
             <!-- Balance -->
-            <p class="text-center text-xl mb-6 font-semibold">Balance: <span>00</span></p>
+            <p class="text-center text-xl mb-6 font-semibold">Balance: <span id="balance">00</span></p>
             <div class="w-3/4 mx-auto mb-6">
               <label for="">Save:</label>
-              <input type="text" class="ml-4 bg-grey py-1 px-4 w-1/4">
+              <input type="text" class="ml-4 bg-grey py-1 px-4 w-1/4" id="saving-rate">
               <span class="mx-4">%</span>
-              <button class="bg-sky-600 py-1 px-8 rounded text-white">Save</button>
+              <button class="bg-sky-600 py-1 px-8 rounded text-white" id="save-button">Save</button>
             </div>
-            <p class="text-center text-xl mb-1 font-semibold">Saving Amount: <span>00</span></p>
-            <p class="text-center text-xl mb-6 font-semibold">Remaining Balance: <span>00</span></p>
+            <p class="text-center text-xl mb-1 font-semibold">Saving Amount: <span id="saving-amount">00</span></p>
+            <p class="text-center text-xl mb-6 font-semibold">Remaining Balance: <span id="remaining-balance">00</span></p>
           </div>
       </section>
     </main>
+    
+    <!-- Javascript Link -->
+    <script src="js/app.js"></script>
   </body>
 </html>
