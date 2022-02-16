@@ -51,6 +51,9 @@ document
     }
     // Generate the result when no errors found
     else {
+      // Remove Error Message if it exists
+      document.getElementById("error-field-one").innerText = "";
+
       // Set Total Expenses as the innerText of Total Expenses Field
       document.getElementById("total-expenses").innerText =
         totalExpenses.toFixed(2);
@@ -89,6 +92,8 @@ document.getElementById("save-button").addEventListener("click", function () {
   }
   // Genarate the result when no errors found
   else {
+    // Remove Error Message if it exists
+    document.getElementById("error-field-two").innerText = "";
     // Set the Saving Amount as the innerText of Saving Ammount Field
     document.getElementById("saving-amount").innerText =
       savingAmount.toFixed(2);
